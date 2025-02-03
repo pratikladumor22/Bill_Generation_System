@@ -44,7 +44,7 @@ public class ProductController {
             attachments[0] = new MockMultipartFile("product_report.csv", new  FileInputStream(csvfile));
             String subject = "Stock Report";
             String body = "Please find the attached stock report.";
-            String to = "email send";
+            String to = "("your emial")";
             return emailServices.sendMail(attachments , to , subject , body);
         }else {
             return String.valueOf(response);
